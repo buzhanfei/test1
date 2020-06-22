@@ -12,27 +12,28 @@ public class Test_Scope {
 		System.out.println(Long.MAX_VALUE);
 		System.out.println(Long.MIN_VALUE);
 		char c = 1255;
-		char c1 = 'ÎÒ';
+		char c1 = 'æˆ‘';
 		char c2 = 'H';
 		System.out.println(c+"|"+c1+"||"+c2);
 		System.out.println(s);
 		System.out.println(0020);
-		StringBuilder s = new StringBuilder("ÎÒ°®Äã");
-		char[] ch = new char[] {'Íõ','»á','ÇÚ'};
+		StringBuilder s = new StringBuilder("æˆ‘çˆ±ä½ ");
+		char[] ch = new char[] {'ç‹','ä¼š','å‹¤'};
 		String s1 = new String(ch);
 		s.append(s1);
 		System.out.println(s);
-		System.out.println(1 | 3);//°´Î»»ò(Á½±ß¶¼ÊÇÊı×Ö)
-		System.out.println(true || false);//¶ÌÂ·»ò
+		System.out.println(1 | 3);//æŒ‰ä½æˆ–(ä¸¤è¾¹éƒ½æ˜¯æ•°å­—)
+		System.out.println(true || false);//çŸ­è·¯æˆ–
 		int year = 1999;
 		System.out.println(leapOrNoLeapYear(year));
+		System.out.println(123);
 	}
 	
 	private static String leapOrNoLeapYear(int year) {
 		if((year%4==0 && year%100!=0) || year%400==0) {
-			return year+"ÄêÊÇÈòÄê£¡£¡£¡";
+			return year+"å¹´æ˜¯é—°å¹´ï¼ï¼ï¼";
 		}else {
-			return year+"ÊÇÆ½Äê£¡£¡£¡";
+			return year+"æ˜¯å¹³å¹´ï¼ï¼ï¼";
 		}
 	}
 	
