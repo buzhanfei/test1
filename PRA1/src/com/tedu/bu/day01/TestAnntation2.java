@@ -8,7 +8,8 @@ public class TestAnntation2 {
 		Annotation[] annotations = forName.getAnnotations();
 		if(annotations.length > 0) {
 			for(int i=0; i<annotations.length; i++) {
-				System.out.println(annotations[i].annotationType().getName());
+				System.out.println(annotations[i].annotationType().getSimpleName()
+						.equals("TestAnnotation"));
 			}
 		}
 		
